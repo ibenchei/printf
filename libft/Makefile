@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ibenchei <ibenchei@student.42.fr>          +#+  +:+       +#+         #
+#    By: iben-che <iben-che@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/01 15:01:50 by iben-che          #+#    #+#              #
-#    Updated: 2023/08/06 16:51:24 by ibenchei         ###   ########.fr        #
+#    Updated: 2023/08/14 17:51:47 by iben-che         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,6 @@ SRCS = ft_atoi.c \
 	 ft_isdigit.c \
 	 ft_isprint.c \
 	 ft_itoa.c \
-	 ft_memccpy.c \
 	 ft_memchr.c \
 	 ft_memcmp.c \
 	 ft_memcpy.c \
@@ -61,7 +60,7 @@ OBJS = $(SRCS:.c=.o)
 all:	$(NAME)
 
 %.o:		%.c
-		$(CC) -o $@ -c $< $(CFLAGS) -I $(INCL)
+		$(CC) -o $@ -c $< $(CFLAGS)
 
 $(NAME):	$(OBJS)
 		ar rc $(NAME) $^

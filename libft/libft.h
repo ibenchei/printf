@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ibenchei <ibenchei@student.42.fr>          +#+  +:+       +#+        */
+/*   By: iben-che <iben-che@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/01 15:02:12 by iben-che          #+#    #+#             */
-/*   Updated: 2023/08/06 17:00:49 by ibenchei         ###   ########.fr       */
+/*   Updated: 2023/08/14 17:42:56 by iben-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@
 # include <string.h>
 # include <unistd.h>
 # include <ctype.h>
+# include <stdint.h>
 
 void	*ft_memset(void *str, int c, size_t n);
 void	ft_bzero(void *str, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
-void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t n);
 void	*ft_memchr(const void *dst, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);

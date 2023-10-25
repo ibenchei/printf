@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ibenchei <ibenchei@student.42.fr>          +#+  +:+       +#+        */
+/*   By: iben-che <iben-che@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/01 14:16:13 by iben-che          #+#    #+#             */
-/*   Updated: 2023/08/06 17:13:49 by ibenchei         ###   ########.fr       */
+/*   Updated: 2023/08/15 17:38:20 by iben-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	no_splits(char *str, char c)
 {
@@ -53,7 +52,7 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	j = 0;
 	tab = (char **)ft_calloc(sizeof(char *), no_splits((char *)s, c));
-	if (!s)
+	if (!tab)
 		return (NULL);
 	while ((char)s[i] != '\0')
 	{

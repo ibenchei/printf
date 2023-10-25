@@ -6,7 +6,7 @@
 /*   By: iben-che <iben-che@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/01 14:13:17 by iben-che          #+#    #+#             */
-/*   Updated: 2023/06/01 14:14:35 by iben-che         ###   ########.fr       */
+/*   Updated: 2023/08/14 19:18:01 by iben-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putnbr_fd(int n, int fd)
 	long	nb;
 
 	nb = n;
+	if (fd < 0)
+		return ;
 	if (nb < 0)
 	{
 		write(fd, "-", 1);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ibenchei <ibenchei@student.42.fr>          +#+  +:+       +#+        */
+/*   By: iben-che <iben-che@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/01 14:37:53 by iben-che          #+#    #+#             */
-/*   Updated: 2023/08/13 09:19:19 by ibenchei         ###   ########.fr       */
+/*   Updated: 2023/08/14 19:38:18 by iben-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	src_len;
 	int		i;
 
-	dst_len = ft_strlen(dst);
-	src_len = ft_strlen(src);
 	if (!src || !dst)
 		return (0);
+	dst_len = ft_strlen(dst);
+	src_len = ft_strlen(src);
 	if (size <= 0)
 		return (src_len);
 	if (dst_len < size - 1)

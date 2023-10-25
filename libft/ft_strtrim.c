@@ -6,7 +6,7 @@
 /*   By: iben-che <iben-che@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/01 14:54:34 by iben-che          #+#    #+#             */
-/*   Updated: 2023/06/01 14:57:07 by iben-che         ###   ########.fr       */
+/*   Updated: 2023/08/14 19:15:19 by iben-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str_len = end_number(s1, set) - start_number(s1, set) + 1;
 	if (str_len < 0)
 		str_len = 0;
-	str = malloc(sizeof(char) * (str_len + 1));
+	str = malloc((str_len + 1) * sizeof(char));
 	if (!str)
 		return (NULL);
 	str[str_len] = '\0';

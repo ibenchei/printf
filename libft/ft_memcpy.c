@@ -6,7 +6,7 @@
 /*   By: iben-che <iben-che@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/01 14:08:45 by iben-che          #+#    #+#             */
-/*   Updated: 2023/06/01 14:09:24 by iben-che         ###   ########.fr       */
+/*   Updated: 2023/08/15 17:30:29 by iben-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,20 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	unsigned char	*tmp_dst;
 	unsigned char	*tmp_src;
+	size_t			i;
 
+	i = 0;
 	tmp_dst = (unsigned char *)dst;
 	tmp_src = (unsigned char *)src;
 	if (!dst && !src)
 		return (dst);
-	while (n > 0)
+	else
 	{
-		tmp_dst[n - 1] = tmp_src[n - 1];
-		n--;
+		while (i < n)
+		{
+			tmp_dst[i] = tmp_src[i];
+			i++;
+		}
+		return (dst);
 	}
-	return (dst);
 }
