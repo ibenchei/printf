@@ -6,7 +6,7 @@
 /*   By: ibenchei <ibenchei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/01 15:02:12 by iben-che          #+#    #+#             */
-/*   Updated: 2023/08/06 17:00:49 by ibenchei         ###   ########.fr       */
+/*   Updated: 2023/10/28 15:20:02 by ibenchei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
+char    *ft_revstr(char *str);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	ft_putchar_fd(char c, int fd);

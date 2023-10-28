@@ -6,7 +6,7 @@
 #    By: ibenchei <ibenchei@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/01 15:01:50 by iben-che          #+#    #+#              #
-#    Updated: 2023/08/06 16:51:24 by ibenchei         ###   ########.fr        #
+#    Updated: 2023/10/28 15:35:53 by ibenchei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,6 +36,7 @@ SRCS = ft_atoi.c \
 	 ft_putnbr_fd.c \
 	 ft_putstr_fd.c \
 	 ft_split.c \
+	 ft_revstr.c \
 	 ft_strchr.c \
 	 ft_strdup.c \
 	 ft_striteri.c \
