@@ -6,7 +6,7 @@
 /*   By: iben-che <iben-che@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/01 15:02:12 by iben-che          #+#    #+#             */
-/*   Updated: 2023/10/28 15:59:12 by iben-che         ###   ########.fr       */
+/*   Updated: 2023/10/31 16:26:18 by iben-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int i);
 int		ft_tolower(int i);
-char    *ft_revstr(char *str);
+char	*ft_revstr(char *str);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, unsigned int n);
