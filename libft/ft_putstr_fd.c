@@ -6,7 +6,7 @@
 /*   By: iben-che <iben-che@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/01 14:15:10 by iben-che          #+#    #+#             */
-/*   Updated: 2023/06/01 14:15:17 by iben-che         ###   ########.fr       */
+/*   Updated: 2023/11/02 15:56:51 by iben-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int	i;
-
-	i = 0;
 	if (!s)
 		return ;
 	if (fd < 0)
